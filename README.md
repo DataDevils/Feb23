@@ -70,6 +70,8 @@ Date: Spring 2018
 
 ### III. Download data: use Python & Pandas
 
+[Link to notebooks](http://nbviewer.jupyter.org/github/DataDevils/Feb23/tree/master/)
+
 * Fire up Jupyter notebooks
 
 * Navigate to `CDPDemos` folder
