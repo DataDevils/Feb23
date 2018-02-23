@@ -6,30 +6,84 @@ Date: Spring 2018
 
 # Business &amp; Environment Demo
 
-https://data.cdp.net/Companies/2011-Global-500-Emissions-and-Response-Status/cxp6-pzzb
+## CDP Demo
 
-### Online Visualization: *2011-Global-500-Emissions-and-Response-Status*
+* Main site: https://data.cdp.net/
+
+* Global 500 Emissions Data (2011):
+
+  https://data.cdp.net/Companies/2011-Global-500-Emissions-and-Response-Status/cxp6-pzzb
+
+
+
+### I. Online Visualization: *2011-Global-500-Emissions-and-Response-Status*
 
 * Navigate to database: [Link](https://data.cdp.net/Companies/2011-Global-500-Emissions-and-Response-Status/cxp6-pzzb)
 
-* View data: https://data.cdp.net/Companies/2011-Global-500-Emissions-and-Response-Status/cxp6-pzzb/data
+* **View** data: https://data.cdp.net/Companies/2011-Global-500-Emissions-and-Response-Status/cxp6-pzzb/data
 
-* Filter data:
+* **Sort** data: on `Performance Band`
 
-* Visualize data:
+* **Filter** data: `Country is USA`
 
-  ► Review: 
+* **Visualize** data:
 
-  * No need for additional software; all in browser
-  * Low learning curve
-  * Restricted to pre-packaged tools
-  * Can't combine datasets
+  * Column plot of `Mean` `Disclosure Score` by `country`
+  * Histogram of `Disclosure score` 
+  * Histogram of `Disclosure score` , filtered for `Counttry is USA`
+  * Point Map of `Count of rows`
+
+  ​
 
 
+##### Review: 
 
-### Download data; use Excel
+* No need for additional software; all in browser (+)
+
+* Low learning curve (+)
+
+* Restricted to pre-packaged tools (-)
+
+* Can't combine datasets (what about 2012, 2013?) (-)
+
+  ---
+
+
+### II. Download data; use Excel
 
 * Export as CSV ([link](https://data.cdp.net/api/views/cxp6-pzzb/rows.csv?accessType=DOWNLOAD))
-* Open in Excel
+
+* Open in Excel...
+  * **Sort** data: on `Performance Band`
+  * **Filter** data: `Country is USA`
+  * **Aggregate** data (Pivot Tables)
+    * Mean `Disclosure Score` by `Country`
+      * Add `Permission` as sub column
+    * Set `Permissions` as row
+  * **Visualize** data:
+    - Column plot of `Mean` `Disclosure Score` by `country`
+    - Histogram of `Disclosure score` 
+      - Set bins to "5"
+    - Histogram of `Disclosure score` , filtered for `Counttry is USA`
+
+  ---
+
+### III. Download data: use Python & Pandas
+
+* Fire up Jupyter notebooks
+* Navigate to `CDPDemos` folder
+* **01-ExploreData**
+  * Read in CSV file as a dataframe
+  * Sort
   * Filter
+  * Aggregate
   * Plot
+    * Bar plot of mean `Disclosure score` by `country`
+    * Box plot of `Disclosure score` by `country`
+    * Histograms of `Disclosure score`: All and USA only
+* **02-FetchData**
+  * Bypass the step of downloading the data
+* **03-FetchData-API**
+  * Better control of how and what data are fetched
+* **04-Merging-Data**
+  * Combine multiple years of data
