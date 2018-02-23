@@ -71,8 +71,11 @@ Date: Spring 2018
 ### III. Download data: use Python & Pandas
 
 * Fire up Jupyter notebooks
+
 * Navigate to `CDPDemos` folder
+
 * **01-ExploreData**
+
   * Read in CSV file as a dataframe
   * Sort
   * Filter
@@ -81,9 +84,31 @@ Date: Spring 2018
     * Bar plot of mean `Disclosure score` by `country`
     * Box plot of `Disclosure score` by `country`
     * Histograms of `Disclosure score`: All and USA only
+
 * **02-FetchData**
+
   * Bypass the step of downloading the data
+
 * **03-FetchData-API**
+
   * Better control of how and what data are fetched
+
 * **04-Merging-Data**
+
   * Combine multiple years of data
+
+  ---
+
+### IV. Other examples
+
+* **GettingData**
+  * 04-Grabbing HTML tables
+* **UsingAPIs**
+  * 2-Exploring the BISON API
+  * 4-Geocoding with OSM
+  * 4a-Geocoding with OSM in bulk
+* **WaterDemos**
+  * 01-WaterFlow Terse
+  * 05-Flood Frequency Analysis
+  * 08-Show All Sites
+
